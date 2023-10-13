@@ -11,20 +11,26 @@
         <header>
             <nav class="navbar">
                 <div class="navLogo">
-                    <span>GOW 2.0</span>
+                    <h1 class="logo">Geeks of Web II</h1>
                 </div>
                 <div>
                     <ul class="navLinks">
-                        <li> <a href="#">About</a></li>
+                        <li> <a href="#">About us</a></li>
                         <li><a href="#">Courses</a></li>
                         <li><input type="search" name="search" id="search" placeholder="Search Courses..."></li>
+                        <li><label class="modalButton" for="modal-1">Sign-Up</label></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <main class="mainContainer">
-            <div class="formContainer">
-                <form action="">
+            <section class="modalWindowSection">
+            <input class="modal-state" id="modal-1" type="checkbox">  
+            <div class="modal">
+                <label class="modal__bg" for="modal-1"></label>
+                <form action="" class="modal__inner">
+                    <h2 class="modalHeading">Sign-Up and Create your account!</h2>
+                    <label class="modal__close" for="modal-1"></label>
                     <div class="formInputs">
 
                         <input type="text" name="fullname" id="name" placeholder="Enter your fullname" class="formBlock">
@@ -40,11 +46,9 @@
                                 <label for="others">Others</label>
                             </span>
                         </span>
-
-                        
+            
                         <input type="email" name="emailId" id="email" placeholder="Enter your email" class="formBlock">
-
-                        
+      
                         <input type="password" name="password" id="password" placeholder="Enter your new password" class="formBlock">
                         
                         <span class="formBlock">
@@ -62,9 +66,6 @@
                             <input type="date" name="dateOfBirth" id="dob">
                         </span>
 
-                        
-
-            
                         <input type="number" name="numberID" id="numberID" placeholder="Enter your desired Number-ID" class="formBlock">
                         <span class="formBlock">
                             <input type="checkbox" name="termsAndConditions" id="tnc">
@@ -73,23 +74,58 @@
 
                     </div>
                     <div class="formButtons">
-                        <input class="formButton green" type="submit" value="Submit">
                         <input class="formButton red" type="reset" value="Reset">
+                        <input class="formButton green" type="submit" value="Submit">
                     </div>
                 </form>
+                
             </div>
-            <div class="gridContainer"> 
-                <!-- Grid Images with Honey Comb Pattern -->
-                <img src="" alt="alternateText">
-                <img src="" alt="alternateText">
-                <img src="" alt="alternateText">
-                <img src="" alt="alternateText">
-                <img src="" alt="alternateText">
-                <img src="" alt="alternateText">
-                <img src="" alt="alternateText">
-                <img src="" alt="alternateText">
-                <img src="" alt="alternateText">
-            </div>
+            </section>
+            <section class="gridContainer">
+                <div class="honeyCombWrapper">
+
+                    <div class="firstRow">
+                        <div class="item"></div>
+                    </div>
+
+                    <div class="secondRow">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                    </div>
+
+                    <div class="thirdRow">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                    </div>
+
+                    <div class="fourthRow">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                    </div>
+
+                    <div class="fifthRow">
+                        <div class="item"></div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="aboutUs">
+                <h2>All about us</h2>
+                <p></p>
+            </section>
+            <section class="technologyCards"></section>       
+            <section class="courseCombination">
+                <div>Basic Web Development Spinner</div>
+                <div>Advanced Frontend Development Spinner</div>
+                <div>Backend Development Spinner</div>
+                <div>Full Stack Development Spinner</div>
+            </section>
         </main>
         <footer>
             <div class="footerImage"></div>

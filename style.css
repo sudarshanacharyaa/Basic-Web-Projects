@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -19,34 +21,170 @@
     background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(2,0,36,1) 25%, rgba(0,212,255,1) 100%);
 }
 
+.logo{
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: xx-large;
+}
+
 .navLinks{
     display: flex;
     list-style-type: none;
     column-gap: 50px;
+    align-items: center;
+}
+
+.navlinks li{
+    padding: 0;
+    margin: 0;
 }
 
 .navLinks li a{
     text-decoration: none;
+    color: gainsboro;
+}
+
+.navLinks li a:hover, .navLinks li a:active {
+    color: white;
+    text-shadow: 0 0 5px white;
+}
+
+.modalButton{
+    text-align: center; 
+    width: 10rem;
+    color: white; 
+    border-radius: 40px; 
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    background-color: green;
 }
 
 .mainContainer{
     display: flex;
+    flex-direction: column;
     width: 100%;
+    margin: 0 auto;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.formContainer{
+/* To be Removed Later only for identification purpose */
+.mainContainer section{
+    border-bottom: 2px dashed gray;
+    min-width: 100%;
+}
+
+.modal{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
-    padding: 2rem;
-    margin: 1rem;
-    box-shadow: -0px -0px 20px 2px navy;
-    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.581);
+    transition: opacity .25s ease;
+    z-index: 10;
     
 }
+
+.modalHeading{
+    padding: 1rem;
+}
+
+.modal__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .modal-state {
+    display: none;
+  }
+  
+  .modal-state:checked + .modal {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal-state:checked + .modal .modal__inner {
+    top: 0;
+  }
+  
+  .modal__inner {
+    transition: top .25s ease;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    margin: auto;
+    overflow: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1em 2em;
+    height: 85%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid navy;
+    padding: 2rem;
+    box-shadow: -0px -0px 20px 2px white;
+    border-radius: 1.5rem;
+  }
+  
+  .modal__close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 1.1em;
+    height: 1.1em;
+    cursor: pointer;
+  }
+  
+  .modal__close:after,
+  .modal__close:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1.5em;
+    background: #ccc;
+    display: block;
+    transform: rotate(45deg);
+    left: 50%;
+    margin: -3px 0 0 -1px;
+    top: 0;
+  }
+  
+  .modal__close:hover:after,
+  .modal__close:hover:before {
+    background: red;
+  }
+  
+  .modal__close:before {
+    transform: rotate(-45deg);
+  }
+  
+  .modalButton:hover,
+  .modalButton:focus {
+    background: #2ecc71;
+  }
+  
+  .modalButton:active {
+    background: #27ae60;
+    box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+  }
+  
 
 .formInputs{
     display: flex;
@@ -80,6 +218,13 @@ input{
     column-gap: 1rem;
 }
 
+.formButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
 .formButton{
     width: 6rem;
     padding: 0.5rem;
@@ -97,4 +242,132 @@ input{
 
 .green{
     background-color: rgb(10, 193, 10);
+}
+
+.gridContainer{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 20rem;
+}
+
+.item {
+    width: 9rem;
+    height: 9rem;
+    background-color: white;
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 2s;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+}
+
+.item::before {
+    content: '';
+    position: absolute;
+    width: 9rem;
+    height: 9rem;
+}
+
+.firstRow {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 11rem;
+}
+
+.secondRow {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 11rem 11rem 11rem 11rem;
+    margin: -20px 0 0 5px;
+}
+
+.thirdRow {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 11rem 11rem 11rem 11rem;
+    margin: -20px 0 0 -170px;
+}
+
+.fourthRow {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 11rem 11rem 11rem 11rem;
+    margin: -20px 0  0 5px;
+}
+
+.fifthRow {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 11rem;
+    margin: -20px 0  0 5px;
+}
+
+.firstRow .item {
+    background-image: url("./assets/icons8-html-512.png");
+}
+
+.secondRow .item:nth-child(1) {
+    background-image: url("./assets/icons8-css-512.png");
+}
+
+.secondRow .item:nth-child(2) {
+    background-image: url("./assets/js-file.png");
+    background-size: 75%;
+}
+
+.secondRow .item:nth-child(3) {
+    background-image: url("./assets/icons8-bootstrap-512.png");
+}
+
+.secondRow .item:nth-child(4) {
+    background-image: url("./assets/icons8-tailwindcss-512.png");
+}
+
+.thirdRow .item:nth-child(1){
+    background-image: url("./assets/icons8-react-native-512.png");
+}
+
+.thirdRow .item:nth-child(2){
+    background-image: url("./assets/icons8-angularjs-512.png");
+}
+
+.thirdRow .item:nth-child(3){
+    background-image: url("./assets/icons8-express-js-512.png");
+}
+
+.thirdRow .item:nth-child(4){
+    background-image: url("./assets/mongodb.png");
+    background-size: 75%;   
+}
+
+.fourthRow .item:nth-child(1) {
+    background-image: url("./assets/java.png");
+    background-size: 75%;
+}
+
+.fourthRow .item:nth-child(2) {
+    background-image: url("./assets/python.png");
+    background-size: 75%;   
+}
+
+.fourthRow .item:nth-child(3) {
+    background-image: url("./assets/php.png");
+    background-size: 73%;   
+}
+
+.fourthRow .item:nth-child(4) {
+    background-image: url("./assets/icons8-redux-512.png");
+}
+
+.fifthRow .item:nth-child(1) {
+    background-image: url("./assets/seo.png");
+    background-size: 75%;   
+}
+
+.item:hover{
+    width: 9rem;
+    height: 9rem;
+    background-color: silver;
+    transform: rotate(360deg);
+    z-index: 2;
 }
