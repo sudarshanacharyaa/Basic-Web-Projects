@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Geeks of Web - 2.0</title>
 </head>
+
 <body>
     <div class="wrapper">
         <header>
@@ -15,7 +17,7 @@
                 </div>
                 <div>
                     <ul class="navLinks">
-                        <li> <a href="#">About us</a></li>
+                        <li> <a href="#aboutUs">About us</a></li>
                         <li><a href="#">Courses</a></li>
                         <li><input type="search" name="search" id="search" placeholder="Search Courses..."></li>
                         <li><label class="modalButton" for="modal-1">Sign-Up</label></li>
@@ -25,62 +27,68 @@
         </header>
         <main class="mainContainer">
             <section class="modalWindowSection">
-            <input class="modal-state" id="modal-1" type="checkbox">  
-            <div class="modal">
-                <label class="modal__bg" for="modal-1"></label>
-                <form action="" class="modal__inner">
-                    <h2 class="modalHeading">Sign-Up and Create your account!</h2>
-                    <label class="modal__close" for="modal-1"></label>
-                    <div class="formInputs">
+                <input class="modal-state" id="modal-1" type="checkbox">
+                <div class="modal">
+                    <label class="modal__bg" for="modal-1"></label>
+                    <form action="" class="modal__inner">
+                        <h2 class="modalHeading">Sign-Up and Create your account!</h2>
+                        <label class="modal__close" for="modal-1"></label>
+                        <div class="formInputs">
 
-                        <input type="text" name="fullname" id="name" placeholder="Enter your fullname" class="formBlock">
-                        
-                        <span class="formBlock bigLabel">
-                            <span>Select Gender:</span>
-                            <span>
-                                <input type="radio" name="gender" id="male">
-                                <label for="male">Male</label>
-                                <input type="radio" name="gender" id="female">
-                                <label for="female">Female</label>
-                                <input type="radio" name="gender" id="others">
-                                <label for="others">Others</label>
+                            <input type="text" name="fullname" id="name" placeholder="Enter your fullname"
+                                class="formBlock">
+
+                            <span class="formBlock bigLabel">
+                                <span>Select Gender:</span>
+                                <span>
+                                    <input type="radio" name="gender" id="male">
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="female">
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="others">
+                                    <label for="others">Others</label>
+                                </span>
                             </span>
-                        </span>
-            
-                        <input type="email" name="emailId" id="email" placeholder="Enter your email" class="formBlock">
-      
-                        <input type="password" name="password" id="password" placeholder="Enter your new password" class="formBlock">
-                        
-                        <span class="formBlock">
-                            <label class="bigLabel" for="profession">Select your profession: </label>
-                            <select name="profession" id="profession">
-                                <option value="null"></option>
-                                <option value="student">Student</option>
-                                <option value="employee">Employee</option>
-                                <option value="admin">Admin</option>
-                            </select>
-                        </span>
 
-                        <span class="formBlock">
-                            <label class="bigLabel" for="dob" >Date of Birth</label>
-                            <input type="date" name="dateOfBirth" id="dob">
-                        </span>
+                            <input type="email" name="emailId" id="email" placeholder="Enter your email"
+                                class="formBlock">
 
-                        <input type="number" name="numberID" id="numberID" placeholder="Enter your desired Number-ID" class="formBlock">
-                        <span class="formBlock">
-                            <input type="checkbox" name="termsAndConditions" id="tnc">
-                            <label for="tnc">I accept to the <a href="#" target="_blank">terms and conditions</a> of Geeks of Web 2.0</label>
-                        </span>
+                            <input type="password" name="password" id="password" placeholder="Enter your new password"
+                                class="formBlock">
 
-                    </div>
-                    <div class="formButtons">
-                        <input class="formButton red" type="reset" value="Reset">
-                        <input class="formButton green" type="submit" value="Submit">
-                    </div>
-                </form>
-                
-            </div>
+                            <span class="formBlock">
+                                <label class="bigLabel" for="profession">Select your profession: </label>
+                                <select name="profession" id="profession">
+                                    <option value="null"></option>
+                                    <option value="student">Student</option>
+                                    <option value="employee">Employee</option>
+                                    <option value="admin">Admin</option>
+                                </select>
+                            </span>
+
+                            <span class="formBlock">
+                                <label class="bigLabel" for="dob">Date of Birth</label>
+                                <input type="date" name="dateOfBirth" id="dob">
+                            </span>
+
+                            <input type="number" name="numberID" id="numberID"
+                                placeholder="Enter your desired Number-ID" class="formBlock">
+                            <span class="formBlock">
+                                <input type="checkbox" name="termsAndConditions" id="tnc">
+                                <label for="tnc">I accept to the <a href="#" target="_blank">terms and conditions</a> of
+                                    Geeks of Web 2.0</label>
+                            </span>
+
+                        </div>
+                        <div class="formButtons">
+                            <input class="formButton red" type="reset" value="Reset">
+                            <input class="formButton green" type="submit" value="Submit">
+                        </div>
+                    </form>
+
+                </div>
             </section>
+
             <section class="gridContainer">
                 <div class="honeyCombWrapper">
 
@@ -115,11 +123,207 @@
 
                 </div>
             </section>
-            <section class="aboutUs">
-                <h2>All about us</h2>
-                <p></p>
+
+            <section class="aboutUsContainer" id="aboutUs">
+                <div class="about-us-text">
+                    <h3 class="subheading">All about us</h3>
+                    <h2 class="aboutHeading">Transforming newbie web developers to web development geeks! </h2>
+                    <p class="aboutPara">Geeks of Web is a leading platform that provides web development resources and
+                        challenges for developers and technology enthusiasts, and for upcoming aspirants. With a strong
+                        emphasis on enhancing web skills and knowledge, it has become a trusted destination for over 12
+                        million plus registered users worldwide. The platform offers a vast collection of tutorials,
+                        practice problems, interview tutorials, articles, and courses, covering various domains of web
+                        development.</p>
+                    <h3 class="subheading">Vision</h3>
+                    <p class="aboutPara">We envision a world where every developer has unfettered access to top-tier
+                        learning resources, enabling them to continuously enhance their skills and flourish amidst the
+                        ever-evolving technology landscape. Geeks of Web aspires to be the definitive platform for
+                        programmers, empowering them to stay at the forefront of their careers and make a significant
+                        impact in the dynamic tech industry. With the time we have evolved and introduced other core
+                        fields preparation courses to support the young aspirants</p>
+                    <h3 class="subheading">Mission</h3>
+                    <p class="aboutPara">Our mission is to empower developers and technology enthusiasts worldwide to
+                        excel in their coding skills and unleash their full potential. We want to bridge the gap between
+                        theory and practice, equipping individuals with skills and expertise required to tackle
+                        real-world challenges in the ever evolving field of technology and get them prepared for their
+                        dream jobs.</p>
+                    <label class="modalButton" for="modal-1">Join us and become a web geek!</label>
+                </div>
+                <div class="about-us-image">
+                    <img src="./assets/about-us.png" alt="about us">
+                </div>
             </section>
-            <section class="technologyCards"></section>       
+
+            <h3 class="sectionHeading">Web Technologies</h3>
+            <section class="technologyCards">
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/icons8-html-512.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the
+                            meaning and structure of web content. "Hypertext" refers to links that connect web pages to
+                            one another, either within a single website or between websites. Links are a fundamental
+                            aspect of the Web. By uploading content to the Internet and linking it to pages created by
+                            other people, you become an active participant in the World Wide Web.
+                            HTML uses "markup" to annotate text, images, and other content for display in a Web browser.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/icons8-css-512.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media. CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now CSS without a version number.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/js-file.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
+
+                            JavaScript's dynamic capabilities include runtime object construction, variable parameter lists, function variables, dynamic script creation (via eval), object introspection (via for...in and Object utilities), and source-code recovery (JavaScript functions store their source text and can be retrieved through toString()).
+                            
+                            This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages or other host environments. For information about APIs that are specific to Web pages, please see Web APIs and DOM.
+                            
+                            The standards for JavaScript are the ECMAScript Language Specification (ECMA-262) and the ECMAScript Internationalization API specification (ECMA-402). As soon as one browser implements a feature, we try to document it. This means that cases where some proposals for new ECMAScript features have already been implemented in browsers, documentation and examples in MDN articles may use some of those new features. Most of the time, this happens between the stages 3 and 4, and is usually before the spec is officially published.
+                            
+                            Do not confuse JavaScript with the Java programming language — JavaScript is not "Interpreted Java". Both "Java" and "JavaScript" are trademarks or registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have very different syntax, semantics, and use.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/icons8-bootstrap-512.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/circular-tailwindcss-512.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables. Instead, it creates a list of "utility" CSS classes that can be used to style each element by mixing and matching.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/seo.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>Search engine optimization (SEO) is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic (known as "natural" or "organic" results) rather than direct traffic or paid traffic. Unpaid traffic may originate from different kinds of searches, including image search, video search, academic search, news search, and industry-specific vertical search engines.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/icons8-angularjs-512.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>Angular (also referred to as "Angular 2+") is a TypeScript-based, free and open-source single-page web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/circular-react-native-512.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3][4] for building user interfaces based on components. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.
+                            React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/icons8-redux-512.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>Redux is an open-source JavaScript library for managing and centralizing application state. It is most commonly used with libraries such as React or Angular for building user interfaces. Similar to (and inspired by) Facebook's Flux architecture, it was created by Dan Abramov and Andrew Clark. Since mid-2016, the primary maintainers are Mark Erikson and Tim Dorr.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/circular-node-js.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.
+
+                            Node.js lets developers use JavaScript to write command line tools and for server-side scripting. The ability to run JavaScript code on the server is often used to generate dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a "JavaScript everywhere" paradigm,[6] unifying web-application development around a single programming language, as opposed to using different languages for the server- versus client-side programming.
+                            
+                            Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games).[7]
+                            
+                            The Node.js distributed development project was previously governed by the Node.js Foundation,[8] and has now merged with the JS Foundation to form the OpenJS Foundation. OpenJS Foundation is facilitated by the Linux Foundation's Collaborative Projects program.[9]</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/icons8-express-js-512.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. It has been called the de facto standard server framework for Node.js.
+
+                            The original author, TJ Holowaychuk, described it as a Sinatra-inspired server, meaning that it is relatively minimal with many features available as plugins. Express is the back-end component of popular development stacks like the MEAN, MERN or MEVN stack, together with the MongoDB database software and a JavaScript front-end framework or library.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/circular-mongodb.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and current versions are licensed under the Server Side Public License (SSPL) which is considered non-free by some organizations and distributions. MongoDB is a member of the MACH Alliance.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/circular-java.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to recompile. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them. The Java runtime provides dynamic capabilities (such as reflection and runtime code modification) that are typically not available in traditional compiled languages. As of 2019, Java was one of the most popular programming languages in use according to GitHub,[citation not found] particularly for client–server web applications, with a reported 9 million developers.
+
+                            Java was originally developed by James Gosling at Sun Microsystems. It was released in May 1995 as a core component of Sun Microsystems' Java platform. The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun had relicensed most of its Java technologies under the GPL-2.0-only license. Oracle offers its own HotSpot Java Virtual Machine, however the official reference implementation is the OpenJDK JVM which is free open-source software and used by most developers and is the default JVM for almost all Linux distributions.
+                            
+                            As of September 2023, Java 21 is the latest version, which is also a long-term support (LTS) version. Java 8, 11, and 17 are previous LTS versions still officially supported.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/python.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
+
+                            Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.
+                            Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions. Python 2.7.18, released in 2020, was the last release of Python 2.
+                            
+                            Python consistently ranks as one of the most popular programming languages</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <img src="./assets/php.png" alt="">
+                    </div>
+                    <div class="cardBody">
+                        <p>PHP is a general-purpose scripting language geared towards web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995. The PHP reference implementation is now produced by the PHP Group. PHP was originally an abbreviation of Personal Home Page, but it now stands for the recursive initialism PHP: Hypertext Preprocessor.</p>
+                    </div>
+                </div>
+
+            </section>
             <section class="courseCombination">
                 <div>Basic Web Development Spinner</div>
                 <div>Advanced Frontend Development Spinner</div>
@@ -134,4 +338,5 @@
         </footer>
     </div>
 </body>
+
 </html>

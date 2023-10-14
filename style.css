@@ -17,8 +17,11 @@
     color: white;
     align-items: center;
     justify-content: space-between;
-    background: rgb(9,9,121);
-    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(2,0,36,1) 25%, rgba(0,212,255,1) 100%);
+    background: #3CA55C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
 }
 
 .logo{
@@ -65,12 +68,6 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-}
-
-/* To be Removed Later only for identification purpose */
-.mainContainer section{
-    border-bottom: 2px dashed gray;
-    min-width: 100%;
 }
 
 .modal{
@@ -137,7 +134,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid navy;
+    border: 1px solid darkgreen;
     padding: 2rem;
     box-shadow: -0px -0px 20px 2px white;
     border-radius: 1.5rem;
@@ -198,7 +195,7 @@ input{
     padding: 0.5rem;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid navy;
+    border: 1px solid darkgreen;
 }
 
 .formInputs select{
@@ -248,6 +245,9 @@ input{
     width: 100%;
     margin: 0 auto;
     padding: 2rem 20rem;
+    background: #3CA55C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .item {
@@ -367,7 +367,93 @@ input{
 .item:hover{
     width: 9rem;
     height: 9rem;
-    background-color: silver;
     transform: rotate(360deg);
     z-index: 2;
+}
+
+.aboutUsContainer{
+    display: flex;
+    margin: 0 auto;
+    padding: 5.8rem 12rem;
+    background-color: beige;
+}
+
+
+.aboutUsContainer .subheading{
+    color: slategrey;
+    letter-spacing: 0.3rem;
+    font-size: x-large;
+}
+
+.aboutUsContainer .aboutHeading{
+    color: green;
+    font-size: xx-large;
+    margin: 2rem 0;
+    text-shadow: 0px 0px  15px #B5AC49;
+}
+
+.aboutUsContainer .aboutPara{
+    margin-bottom: 2rem;
+}
+
+.about-us-image{
+    background: #3CA55C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    clip-path: polygon(49% 7%, 100% 0, 84% 26%, 100% 100%, 57% 93%, 47% 91%, 0 100%, 14% 77%, 0 0);
+
+}
+
+.about-us-image img{
+    height: 570px;
+}
+
+.sectionHeading{
+    display: block;
+    color: slategrey;
+    letter-spacing: 0.3rem;
+    font-size: x-large;
+    margin: 2rem;
+}
+
+.technologyCards{
+    display: flex;
+    margin: 0 auto;
+    padding: 6rem 12rem;
+    gap: 5rem 10rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px 2px grey;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+}
+.cardHead{
+    height: 50%;
+    text-align: center; 
+    padding: 0.5rem;
+    border-radius: 1rem 1rem 0 0;
+    border-bottom: 1px solid black;
+    background-image: linear-gradient(to left, #B5AC49 0%, #3ca55c 100%);
+}
+
+.cardHead img{
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.cardBody{
+    height: 100%;
+    border-radius: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    overflow-y: scroll;
 }
