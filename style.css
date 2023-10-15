@@ -18,8 +18,8 @@
     align-items: center;
     justify-content: space-between;
     background: #3CA55C;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     
 }
@@ -457,3 +457,270 @@ input{
     padding: 1rem;
     overflow-y: scroll;
 }
+
+.courseWrapper{
+    background-color: beige;
+}
+
+#coursesOffered {
+    text-align: center;
+}
+
+.courseCombination{
+    display: flex;
+    gap: 12rem 15rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 6rem 12rem;
+}
+
+.spinner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+/* ---------- Container for the orbiting circles animation ---------- */
+#circle-orbit-container {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    height: 300px;
+    width: 300px;
+  }
+  
+  /* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+  .inner-orbit {
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    width: 150px;
+    height: 150px;
+    border: 2px silver dashed;
+    border-radius: 100%;
+    -webkit-animation: spin-right 10s linear infinite;
+    animation: spin-right 20s linear infinite;
+  }
+  
+  /* ---------- Repeating styles for the inner orbiting circles ---------- */
+  .inner-orbit-cirlces {
+    position: absolute;
+    top: 50px;
+    left: -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: transparent;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .htmlLogo{
+    background-image: url("/assets/icons8-html-512.png");
+  }
+
+  .bootstrapLogo{
+    background-image: url("./assets/icons8-bootstrap-512.png");
+  }
+
+  .tailwindLogo{
+    background-image: url("./assets/circular-tailwindcss-512.png");
+  }
+
+  .nodeLogo{
+    background-image: url("./assets/node-js.png");
+    background-size: 80%;
+  }
+
+  .mongoLogo{
+    background-image: url("./assets/mongodb.png");
+    background-size: 80%;
+  }
+
+  .expressLogo{
+    background-image: url("./assets/icons8-express-js-512.png");
+    background-color: white;
+    background-size: 80%;
+  }
+
+  .innerDualLogos{
+    top: 40px;
+    left: 120px;
+  }
+  
+  /* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+  .middle-orbit {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 225px;
+    height: 225px;
+    border: 2px silver dashed;
+    border-radius: 100%;
+    -webkit-animation: spin-right 15s linear infinite;
+    animation: spin-left 15s linear infinite;
+  }
+  
+  /* ---------- Repeating styles for the inner orbiting circles ---------- */
+  .middle-orbit-cirlces {
+    position: absolute;
+    top: 88px;
+    left: -27px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: transparent;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  .middleDualLogos{
+    top: 118px;
+    left: 190px;
+  }
+
+  .cssLogo{
+    background-image: url("/assets/icons8-css-512.png");
+  }
+
+  .sassLogo{
+    background-image: url("./assets/icons8-sass-avatar-512.png");
+    background-size: 75%;
+  }
+
+  .phpLogo{
+    background-image: url("./assets/php.png");
+    background-size: 80%;
+  }
+  
+  /* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
+  .outer-orbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 294px;
+    height: 294px;
+    border: 2px silver dashed;
+    border-radius: 100%;
+    -webkit-animation: spin-right 20s linear infinite;
+    animation: spin-right 10s linear infinite;
+  }
+  
+  /* ---------- Repeating styles for the outer orbiting circles ---------- */
+  .outer-orbit-cirlces {
+    position: absolute;
+    top: 122px;
+    left: -27px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: transparent;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .outerDualLogos{
+    top: 50px;
+    left: 247px;
+  }
+
+  .outerMultiLogos{
+    top: 190px;
+    left: 247px;
+  }
+
+  .outerQuadLogos{
+    top: 264px;
+    left: 75px;
+  }
+
+  .jsLogo{
+    background-image: url("/assets/js-file.png");
+  }
+
+  .reactLogo{
+    background-image: url("/assets/circular-react-native-512.png");
+  }
+
+  .angularLogo{
+    background-image: url("/assets/icons8-angularjs-512.png");
+  }
+
+  .javaLogo{
+    background-image: url("./assets/java.png");
+  }
+
+  .pythonLogo{
+    background-image: url("./assets/python.png");
+  }
+
+  .seoLogo{
+    background-image: url("./assets/seo.png");
+  }
+  
+  /* ---------- Animation ---------- */
+  @-webkit-keyframes spin-right {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes spin-left {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(-360deg);
+    }
+  }
+
+  .small{
+    font-size: large;
+    text-align: center;
+    color: green;
+    text-shadow: 0px 0px  15px #B5AC49;
+  }
+
+  .smallparagraph{
+    font-size: medium;
+    color: black;
+    letter-spacing: normal;
+    text-align: center;
+    margin: 15px;
+  }
+
+  .footerWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10rem;
+    background: #3CA55C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    padding: 5rem;
+  }
+
+  .footerSocialIcons{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footerSocialIcons a img:hover{
+    border-radius: 50%;
+    scale: 1.1;
+  }
